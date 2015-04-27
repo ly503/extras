@@ -1,42 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Assignment 6: Online Store & Shopping Cart</title>
+<title>Assignment 4: Online Store</title>
 	<link rel="stylesheet" href="styles2.css">
 		<script type="text/javascript" src="Assignment4.js"></script>
 </head>
 
-<body>
-<h1> Poster World Store </h1>
+<body onload="checkcookie()">
+<h1> Poster Store </h1>
 
-<a href=login.php><input type="button" name="login" value="Login"></a>
-<a href=signup.php><input type="button" name="signup" value="Sign Up"></a>
-<br>
-<form action="search.php" method="post" name="search">
-Search for a product: <input type="text" name="keyword" placeholder="Type here">
-<a href=search.php><input type="button" name="search" value="search"></a>
-</form>
-
-<form action="checkout.php" method="post" name="form1">
+<form name="form1">
 <h2 id="cookie"></h2>
 <fieldset id="field1">
 <legend><b>Choose a product:</b></legend>
 Art work: <select id="Pictures" name="Pictures">
 	<optgroup label="Paintings">
-  		<option id="VanGogh" value="20" name="pic">Starry Night</option>
-  		<option id="DaVinci" value="30" name="pic">Mona Lisa</option>
-  		<option id="Picasso" value="40" name="pic">Guernica</option>
+  		<option id="VanGogh" value="20">Starry Night</option>
+  		<option id="DaVinci" value="30">Mona Lisa</option>
+  		<option id="Picasso" value="40">Guernica</option>
   	</optgroup>
   	<optgroup label="Photos" name="Photos">
-  		<option id="NYC" value="25" name="pic">New York Skyline</option>
-  		<option id="Philly" value="15" name="pic">Philadelphia Skyline</option>
-  		<option id="Atlanta" value="10" name="pic">Atlanta Skyline</option>
+  		<option id="NYC" value="20">New York Skyline</option>
+  		<option id="Philly" value="15">Philadelphia Skyline</option>
+  		<option id="Atlanta" value="10">Atlanta Skyline</option>
   	 </select>
 Quantity: <select id="Number" name="Number">
 	<optgroup label="Quantity">
-  		<option value="1" name="quantity">1</option>
-  		<option value="2" name="quantity">2</option>
-  		<option value="3" name="quantity">3</option>
+  		<option value="1">1</option>
+  		<option value="2">2</option>
+  		<option value="3">3</option>
   	</optgroup>
   	</select>
 <aside>
@@ -52,6 +44,7 @@ Shipping: <input type="radio" id="standard" value="5.99" name="shipping"> Standa
 <input type="button" value="Calculate Total:" onclick="calctotal()">$<input type="number" id="total" disabled>
 <br>
 <textarea>Enter additional comments for delivery here:</textarea><br>
+<button type="reset" value="reset">Reset</button><br>
 </fieldset>
 
 <fieldset id="field2">
@@ -70,10 +63,9 @@ Type of Credit Card: <input type="radio" id="visa" name="cc">Visa
 					<input type="radio" id="mastercard" name="cc">Mastercard
 					<input type="radio" id="discover" name="cc">Discover
 					<input type="radio" id="amex" name="cc">American Express<br>
-<input type="submit" id="checkout" value="checkout" name="submit">
-<button type="reset" value="reset">Reset</button><br>
-</fieldset>
+  <button type="reset" value="reset">Reset</button>
+  <input type="button" id="checkout" value="Check Out" onclick="CheckEmail(); CheckCard(); CheckZip(); printreceipt()">
 </form>
-
 </body>
+
 </html>
