@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Assignment5</title>
+<link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+<h1> Assignment 5</h1>
+<p><b>Madlib Game</b></p>
+<form action="madlib.php" method="post" name="madlib">
+1. Enter a noun:<input type="text" name="noun"><br>
+2. Enter an adjective: <input type="text" name="adj"><br>
+3. Enter a verb in past tense: <input type="text" name="verb"><br>
+4. Enter a number: <input type="number" name="num1"><br>
+5. Enter another number: <input type="number" name="num2"><br>
+6. Enter another noun:<input type="text" name="noun2"><br>
+7. Enter another adjective: <input type="text" name="adj2"><br>
+8. Enter another verb in past tense: <input type="text" name="verb2"><br>
+<input type="submit"> <input type="reset">
+</form>
+
+<p><b>Calculator</b></p>
+<form action="calculator.php" method="post" name="calculator">
+1. Enter a number: <input type="number" name="calcnum1"><br>
+2. Enter another number: <input type="number"  name="calcnum2"><br>
+3. Choose your operator: <br>
++<input type="radio" value="+" id="add" name="calcopt">
+-<input type="radio" value="-" id="sub" name="calcopt">
+/<input type="radio" value="/" id="div" name="calcopt">
+*<input type="radio" value="*" id="mult" name="calcopt"><br>
+<input type="submit"> <input type="reset"><br>
+</form>
+
+<p><b>Online Store Form</b></p>
+<form action="onlinestoreform.php" method="post" name="store">
+1. Enter your name: <input type="text" name="storename"><br>
+2. Enter your email: <input type="text" name="storeemail"><br>
+3. Pick a product: 
+<select id="product" name="product">
+	<option value = "9.99" name="hat">Hat - $9.99</option>
+	<option value = "15.99" name="scarf">Scarf - $15.99</option>
+</select><br>
+4. Enter a quantity of item: <input type="text" name="quantity"><br>
+<input type="submit"> <input type="reset">
+</form>
+
+<p><b>Online quiz</b></p>
+<form action="onlinequiz.php" method="post" name="quiz">
+Enter your first name: <input type="text" name="fname" required><br>
+Enter your last name: <input type="text" name="lname" required><br>
+True or false:<br>
+	1. Puerto Rico is a state in the United States of America?<br>
+		True <input type="radio" value="True" name="quizopt1">
+		False <input type="radio" value="False" name="quizopt1"><br>
+	2. Philadelphia is the capital of Pennsylvania?<br>
+		True <input type="radio" value="True" name="quizopt2">
+		False <input type="radio" value="False" name="quizopt2"><br>
+	3. Canada is part of North America?<br>
+		True <input type="radio" value="True" name="quizopt3">
+		False <input type="radio" value="False" name="quizopt3"><br>
+<input type="submit"> <input type="reset">
+</form>
+
+
+</body>
+
+</html>
