@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: LobsterTwo;
+    src:
+    	 url('../fonts/LobsterTwo/lobstertwo-bold-webfont.eot'),
+         url('../fonts/LobsterTwo/lobstertwo-bold-webfont.woff'),
+         url('../fonts/LobsterTwo/lobstertwo-bold-webfont.ttf'),
+         url('../fonts/LobsterTwo/lobstertwo-bold-webfont.svg');
+}
+
+body {
+	background-color: #fa6775; 
+	} 
+	
+h1, h2, h3, h4, h5, h6 {
+	color: yellow;
+	font-family: LobsterTwo;
+	font-size: 2.4em;
+	text-align: center;
+	}
+	
+p {
+	font-family: georgia, times, serif;
+	font-size: 1em;
+	color: black;
+	line-height: 1.2em;
+	text-align: center;
+	}
+	
+ul {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	line-height: 1.4em;
+	text-align:center;
+	}	
+	
+img {
+	border-width: 1px;
+	border-style: solid;
+	border-color: orange;
+	display: block;
+	margin: auto;
+	}
+
+a:link, a: visited {
+	color: black;
+	text-decoration: underline;
+	}
+
+a:focus, a:hover {
+	color: black;
+	background: purple;
+	}
+	
+a:active {
+	text-decoration: none;
+	}
+	
